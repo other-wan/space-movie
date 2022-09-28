@@ -1,0 +1,18 @@
+.header {
+    padding-block: 5vh 3vh;
+}
+
+.search-form input {
+    background: url("../assets/icon-search.svg");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 0px center;
+}
+
+@media screen and (max-width: 990px) {
+    .header { 
+        width: 90%; 
+        margin-inline: auto;
+        padding-block: 20px;
+    }
+}

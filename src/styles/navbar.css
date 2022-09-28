@@ -105,10 +105,7 @@
 }
 
 @media screen and (max-width: 990px) {
-    .aside { 
-        width: 90%;
-        margin-inline: auto;
-    }
+    .aside { width: 90%; }
 
     .navbar {
         position: static;
@@ -138,8 +135,8 @@
     }
 
     .nav-item img {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
 
     .nav-item.nav-item.active {
@@ -153,4 +150,16 @@
 
     .profile span,
     .nav-item span { display: none; }
+}
+
+@media screen and (max-width: 450px) {
+    .aside { 
+        width: 100%;
+        height: 10vh; 
+    }
+
+    .navbar { 
+        border-radius: 0;
+        margin-block: 0;
+    }
 }

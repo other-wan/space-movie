@@ -37,5 +37,21 @@
 }
 
 @media screen and (max-width: 990px) {
-    .trending { width: 95%; margin-inline: auto 0; }
+    .trending { 
+        width: 95%; margin-inline: auto 0; 
+    }
+
+    .trending-item {
+        height: 160px;
+        max-height: 160px;
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .trending-item {
+        height: 130px;
+        max-height: 130px;
+        min-width: 220px;
+    }
 }

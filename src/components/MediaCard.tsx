@@ -17,7 +17,8 @@ const MediaCard = ({ media: item, position }: MediaCardType) => {
             <img 
                 className="card-img"
                 src={`https://image.tmdb.org/t/p/w500/${item.backdrop_path}`} 
-                alt={item.title? item.title : item.name} />
+                alt={item.title? item.title : item.name}
+                loading="lazy" />
                 
             <div className={`card-content ${position ? 'card-pos' : ''}`}>
                 <div className="card-desc">

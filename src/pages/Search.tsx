@@ -34,7 +34,10 @@ const Search = () => {
     
     return ( 
         <section  className="section-m40">
-            <h2>{`Found ${memo ? memo.length : 0} results '${param}'`}</h2>
+            { memo?.length ? 
+                <h2>{`Found ${memo ? memo.length : 0} results '${param}'`}</h2>
+                : <h2>{`No result found for ${param}`}</h2>
+            }
             
             <ListManager 
                 data={memo}
